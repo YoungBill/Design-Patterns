@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import baina.android.com.design.patterns.Decorative.DecorativeActivity;
+import baina.android.com.design.patterns.Proxy.ProxyActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +19,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, DecorativeActivity.class));
+            }
+        });
+
+        findViewById(R.id.b2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ProxyActivity.class));
             }
         });
     }

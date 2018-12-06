@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Decorative.DecorativeActivity" />
+        <activity android:name=".Proxy.ProxyActivity" />
     </application>
 
 </manifest>
